@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "beli ciki", 
         "beli koyo", 
         "suki yo", 
-        "ima anata ni omoi nosete hora", 
+        "ima anata ni omoi nosete", 
         "hora", 
         "sunao ni naru no watashi", 
         "kono saki motto",
