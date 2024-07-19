@@ -16,6 +16,30 @@ body {
     background-size: cover; /* Ensure the background image covers the entire body */
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Make the background image stay in place */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fffb0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #lyrics {
@@ -30,7 +54,7 @@ body {
 
 #lyrics div {
     display: block; /* Ensure each lyric is on a new line */
-    border-right: 2px solid transparent; /* Cursor style */
+    border-right: 2px solid #fff; /* Cursor style */
     white-space: nowrap;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
