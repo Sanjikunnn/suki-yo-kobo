@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "suki yo"
     ];
 
-    const delayTimes = [1000, 4000, 1000, 3000, 1000, 4000, 3000, 3000, 3000, 7000]; 
+    const delayTimes = [2000, 4000, 1000, 3000, 1000, 4000, 3000, 3000, 3000, 7000]; 
 
     const lyricsContainer = document.getElementById('lyrics');
     const backgroundMusic = document.getElementById('background-music');
