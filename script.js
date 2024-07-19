@@ -8,14 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "kono saki motto",
         "soba ni ite mo ii ka na?",
         "koi to koi ga kasanatte",
-        "suki yo", 
-        "ima anata ni omoi todoke", 
-        "nee kizuite kuremasen ka?", 
-        "dou shiyou mo nai kurai", 
-        "kokoro made suki ni natte yuku"
+        "suki yo"
     ];
 
-    const delayTimes = [1000, 4000, 1000, 4000, 4000, 3000, 3000, 3000, 3000, 5000, 2000, 3000, 2000]; 
+    const delayTimes = [1000, 4000, 1000, 4000, 4000, 3000, 3000, 3000, 7000]; 
 
     const lyricsContainer = document.getElementById('lyrics');
     const backgroundMusic = document.getElementById('background-music');
