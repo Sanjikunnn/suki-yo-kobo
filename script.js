@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "beli koyo", 
         "suki yo", 
         "ima anata ni omoi nosete hora", 
+        "hora", 
         "sunao ni naru no watashi", 
         "kono saki motto",
         "soba ni ite mo ii ka na?",
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "suki yo"
     ];
 
-    const delayTimes = [1000, 4000, 1000, 4000, 4000, 3000, 3000, 3000, 7000]; 
+    const delayTimes = [1000, 4000, 1000, 4000, 1000, 4000, 3000, 3000, 3000, 7000]; 
 
     const lyricsContainer = document.getElementById('lyrics');
     const backgroundMusic = document.getElementById('background-music');
