@@ -18,6 +18,7 @@ body {
     background-attachment: fixed; /* Make the background image stay in place */
     margin: 0;
     height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
 }
 
 #container {
@@ -43,7 +44,7 @@ body {
 }
 
 #lyrics {
-    font-size: 24px;
+    font-size: calc(16px + 2vw); /* Responsive font size */
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -54,11 +55,10 @@ body {
 
 #lyrics div {
     display: block; /* Ensure each lyric is on a new line */
-    border-right: 2px solid transparent; /* Cursor style */
+    border-right: 2px solid #fff; /* Cursor style */
     white-space: nowrap;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
     opacity: 0;
     transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
     animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite, fadeIn 1s forwards, zoomIn 0.6s forwards, shadowIn 3s forwards 1s;
