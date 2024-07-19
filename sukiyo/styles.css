@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+}
+
+body {
+    background-color: #1e1e1e; /* Dark background for better contrast */
+    color: #fff; /* White text color */
+    font-family: 'Roboto', sans-serif; /* Roboto font for clean and modern look */
+    background-image: url('d282894d6174aac04d1c166faf596614.jpg'); /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background image stay in place */
+}
+
+#lyrics {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+}
+
+#lyrics div {
+    display: block; /* Ensure each lyric is on a new line */
+    border-right: 2px solid transparent; /* Cursor style */
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite, fadeIn 1s forwards, zoomIn 0.6s forwards, shadowIn 3s forwards 1s;
+    margin-bottom: 20px;
+    -webkit-transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out, text-shadow 1s ease-in-out;
+}
+
+#lyrics div:nth-child(odd) {
+    font-style: italic;
+}
+
+#lyrics div:nth-child(even) {
+    font-weight: bold;
+    background: -webkit-linear-gradient(#eee, #fffb0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes shadowIn {
+    0%, 100% { text-shadow: none; }
+    50% { text-shadow: 2px 2px 4px #000; }
+}
