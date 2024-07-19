@@ -54,7 +54,7 @@ body {
 
 #lyrics div {
     display: block; /* Ensure each lyric is on a new line */
-    border-right: 2px solid #fff; /* Cursor style */
+    border-right: 2px solid transparent; /* Cursor style */
     white-space: nowrap;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
